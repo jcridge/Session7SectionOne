@@ -1,11 +1,11 @@
 $(document).on("pagecreate","#pageone",function(){
   $('#submitButton').on("click", function(){
-    submitText();
+    random();
   });            
 });            
 
-
-function submitText() {
-	var text = $('#textinput').val();
-	alert(text);
+function random() {
+	console.log("Running function");
+	return !Math.round(Math.random()); 
+	document.getElementById("returnedResult").innerHTML = Math.random();
 }
