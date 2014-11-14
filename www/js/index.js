@@ -2,8 +2,13 @@ $(document).on("pagecreate","#pageone",function(){
   $('#submitButton').on("click", function(){
     random();
 	document.getElementById("returnedResult").innerHTML = random();
-	//beep three time
-	navigator.notification.beep(3);
+	if(random() == true){
+		console.log("True");
+		navigator.notification.beep(2);
+	}else{
+		console.log("False");
+		navigator.notification.beep(1);
+		}
   });            
 });            
 
