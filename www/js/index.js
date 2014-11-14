@@ -5,6 +5,7 @@ $(document).on("pagecreate","#pageone",function(){
 	if(random() == true){
 		console.log("True");
 		navigator.notification.beep(2);
+		navigator.notification.vibrate(2000);
 	}else{
 		console.log("False");
 		navigator.notification.beep(1);
