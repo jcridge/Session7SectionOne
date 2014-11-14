@@ -1,8 +1,8 @@
 $(document).on("pagecreate","#pageone",function(){
   $('#submitButton').on("click", function(){
-    random();
-	document.getElementById("returnedResult").innerHTML = random();
-	if(random() == true){
+    var ran = random();
+	document.getElementById("returnedResult").innerHTML = ran;
+	if(ran == true){
 		console.log("True");
 		navigator.notification.beep(2);
 		navigator.notification.vibrate(2000);
