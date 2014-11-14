@@ -4,7 +4,12 @@ $(document).on("pagecreate","#pageone",function(){
 	document.getElementById("returnedResult").innerHTML = ran;
 	if(ran == true){
 		console.log("True");
-		navigator.notification.beep(2);
+		window.setTimeOut(
+			function(){
+				navigator.notification.vibrate(3000)
+			},
+			4000
+		);
 		navigator.notification.vibrate(2000);
 	}else{
 		console.log("False");
