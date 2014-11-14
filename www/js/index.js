@@ -10,7 +10,6 @@ $(document).on("pagecreate","#pageone",function(){
 			},
 			4000
 		);
-		navigator.notification.vibrate(2000);
 	}else{
 		console.log("False");
 		window.setInterval(
