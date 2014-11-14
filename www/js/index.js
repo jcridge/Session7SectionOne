@@ -8,7 +8,12 @@ $(document).on("pagecreate","#pageone",function(){
 		navigator.notification.vibrate(2000);
 	}else{
 		console.log("False");
-		navigator.notification.beep(1);
+		window.setInterval(
+			function(){
+				navigator.notification.beep(1)
+			},
+			3000
+		);
 		}
   });            
 });            
